@@ -1,0 +1,45 @@
+.active{
+  color: #4ba1c4;
+  border-bottom: #4ba1c4 .2rem solid !important;
+}
+.tab-item{
+  width: 20%;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: .2rem solid transparent;
+}
+
+.Logistics-box{
+  width: 20rem;
+  max-height: 25rem;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+ol{
+  overflow: scroll;
+  padding: .5rem;
+}
+ol>li{
+  width: 100%;
+  padding-left: .5rem;
+}
+ol>li{
+  border-left: 1px solid ;
+}
+li>div:first-child{
+  position: relative;
+}
+li>div:first-child::after{
+content: '';
+width: .5rem;
+height: .5rem;
+position: absolute;
+background-color: grey;
+top: 0rem;
+left: -.5rem;
+transform: translate(-50%,-50%);
+border-radius: 50%;
+}

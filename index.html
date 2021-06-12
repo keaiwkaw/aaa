@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>订单页</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/util.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body class="bg-gray">
+  <div class="app relative">
+    <div class="tab flex jc-around p-1 mb-3">
+      <div class="tab-item active" data-state='all'>全部</div>
+      <div class="tab-item" data-state='audit'>待审核</div>
+      <div class="tab-item" data-state='payment'>待付款</div>
+      <div class="tab-item" data-state='receiving'>待收货</div>
+      <div class="tab-item" data-state='received'>已收货</div>
+    </div>
+    <div class="users-box">
+    </div>
+    <div class="Logistics-box flex bg-gray fixed p-3 flex-col" style="display:none;">
+      <ol class="text-grey-1 fs-xs"></ol>
+    <div class=" jc-end flex jc-end"> <button class="w-5 p-1 confirm">确认</button></div>
+    </div>
+  </div>
+  <script src="./js/index.js" type="module"></script>
+</body>
+</html>
